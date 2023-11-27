@@ -46,9 +46,7 @@
     "clean": "rm -rf build && mkdir build",
     "build-babel": "babel -d ./build/src/ ./src/ -s",
     "build": "npm run clean && npm run build-babel",
-    "test": "jest --coverage --verbose --testTimeout=30000 ./src/tests/*.js --detectOpenHandles npm test --detectOpenHandles",
-    "test:watch": "npm run test -- --watch",
-    "coverage": "nyc --reporter=html --report-dir=coverage/ npm run test"
+    "test": "npm  test"
   },
   "author": "",
   "license": "ISC",
